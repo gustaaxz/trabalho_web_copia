@@ -111,3 +111,30 @@ body {
     font-size: 15px;
     color: #ddd;
 }
+.oque_e_valorant {
+    display: flexbox;
+    justify-items: center;
+    justify-content: end;
+    margin: 40px;
+}
+.oque_e_valorant a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s, transform 0.2s;
+    ;
+}
+.oque_e_valorant a img {
+    height: auto;
+    width: auto;
+    transition: transform 0.2s;
+}
+
+.oque_e_valorant a:hover {
+    opacity: 0.85;
+}
+
+.oque_e_valorant a:hover img {
+    transform: scale(1.12);
+}

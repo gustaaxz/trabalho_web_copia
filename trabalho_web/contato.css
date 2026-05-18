@@ -1,0 +1,161 @@
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.subscribe-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.subscribe-container input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.subscribe-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.subscribe-container button:hover {
+    background-color: #0056b3;
+}
+.subscribe-container .message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #28a745;
+}
+.subscribe-container .error {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #dc3545;
+}
+/* Estilos para a seção de contato */
+.contact-section {
+    margin-top: 40px;
+    text-align: center;
+}
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contact-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.contact-section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.contact-section a:hover {
+    text-decoration: underline;
+}
+/* Estilos para o rodapé */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/********** Estilos para a página de contato **********/
+.topo {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('assets/LOUD-Sacy-VCT-2022.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+.topo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
+}
+.topo h1 {
+    position: relative;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    z-index: 2;
+}
+.topo p {
+    position: relative;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ccc;
+    z-index: 2;
+}
+.subscribe-box {
+    position: relative;
+    align-items: center;    
+    z-index: 1;
+    margin: 40px auto 40px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(240, 248, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .topo {
+        min-height: 70vh;
+        padding: 30px 15px;
+    }
+    .topo h1 {
+        font-size: 28px;
+    }
+    .topo p {
+        font-size: 16px;
+    }
+    .subscribe-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .subscribe-container input[type="email"],
+    .subscribe-container button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .topo h1 {
+        font-size: 24px;
+    }
+    .topo p {
+        font-size: 14px;
+    }
+    .subscribe-container input[type="email"],
+    .subscribe-container button {
+        width: 100%;
+    }
+}
