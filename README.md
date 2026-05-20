@@ -155,3 +155,17 @@ A tabela abaixo lista os arquivos de imagem na pasta `assets/` e onde estão sen
 | `feliz.jpeg` | Sacy feliz com troféu da Sentinels | `html/sen.html` |
 | `valorant.jpg` | Banner link Valorant | `index.html`, `html/sacy.html` |
 | `valorant_logo1.jpg` | Logotipo Valorant | `html/valorant.html` |
+
+---
+
+## ✅ Melhorias e Atualizações Realizadas
+
+1. Adicionado `css/style.css` em todas as páginas HTML para aplicar estilos globais compartilhados.
+2. Importado o Font Awesome em todos os arquivos HTML usando `cdnjs.cloudflare.com`.
+3. Atualizada a classe `container` em imagens principais de todas as páginas para melhorar a exibição responsiva e o layout.
+4. Convertidos todos os `h1` para `h2` nas páginas HTML, mantendo apenas os títulos principais dentro da `div.topo` como `h1`.
+5. Ajustados os caminhos relativos dos links de CSS e imagens onde necessário para garantir que todos os arquivos funcionem corretamente dentro de `html/`.
+6. Verificado que não há links HTML apontando para `html/sacy.html` no projeto; sua referência existe apenas no `README.md`.
+7. Organizado o conteúdo de navegação em todas as páginas para manter consistência visual entre as rotas internas.
+
+> Essas alterações foram feitas para melhorar a consistência de estilo, a semântica dos títulos, a responsividade de imagens e a compatibilidade de ícones com Font Awesome.
