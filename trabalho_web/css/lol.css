@@ -1,12 +1,14 @@
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* grid-template-columns: 1fr 1fr; removed */
     gap: 20px;
     text-align: start;
     padding: 50px;
     align-items: center;
 }
-.grid-container img{
+.flex-container img{
     height: 80%;
 }
 .topo img{
@@ -90,25 +92,15 @@
 body{
     background-color: black;
 }
-.grid-item h1{
+.bio-history h1{
     color: #ddd;
     font-size: 25px;
     font-family: Arial, sans-serif; 
     margin-bottom: 15px;
     line-height: 1.7;  
 }
-.grid-item2{
+.bio-history2{
     color: #ddd;
-}
-.grid-item3{
-    display: flex;
-    justify-content: start;
-    position: absolute;
-}
-.grid-item3 a img{
-    width: 80px;
-    height: auto;
-    transition: transform 0.3s;
 }
 .botao_topo {
     position: relative;
@@ -119,3 +111,4 @@ body{
     cursor: pointer;
     transition: opacity 0.3s, transform 0.3s;
 }
+.flex-container > * { flex: 1 1 calc(50% - 20px); box-sizing: border-box; }
